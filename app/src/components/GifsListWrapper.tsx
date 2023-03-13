@@ -24,7 +24,9 @@ const GifsListWrapper = ({ searchName }: IGifsList) => {
   if (!query.data?.pages) {
     return null;
   }
+
   const { pages } = query.data;
+
   return (
     <div className="container m-auto">
       <GifsList pages={pages} />

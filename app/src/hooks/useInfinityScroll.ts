@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { throttle } from "lodash";
 
-const scrollY = () => {
+export const scrollY = () => {
   if (typeof window.pageYOffset !== "undefined") {
     // most browsers except IE before #9
     return window.pageYOffset;
@@ -12,7 +12,7 @@ const scrollY = () => {
   return D.scrollTop;
 };
 
-const documentHeight = () => {
+export const documentHeight = () => {
   const { body, documentElement: html } = document;
 
   return Math.max(
