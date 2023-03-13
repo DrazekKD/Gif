@@ -24,12 +24,14 @@ Object.defineProperty(global, "document", {
 Object.defineProperty(global, "window", {
   value: mockWindow,
 });
-describe("scrollY", () => {
-  it("documentHeight returns the maximum height of the document", () => {
+
+describe("documentHeight", () => {
+  it("returns the maximum height of the document", () => {
     // Call the function and expect the result to be the maximum height
     expect(documentHeight()).toBe(600);
   });
 });
+
 describe("scrollY", () => {
   it("should return the Y scroll position of the window", () => {
     // Call the function and expect the result to be the scroll position

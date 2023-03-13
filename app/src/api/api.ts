@@ -1,7 +1,7 @@
-import axios, { AxiosRequestConfig } from "axios";
+import axios from "axios";
 
 const url = "https://api.giphy.com/v1/";
-const apiKey = "z3TCxWMXI3poet0DNQBeC8RfYrprX7U1";
+const apiKey = import.meta.env.VITE_GIPHY_API_KEY;
 
 const gifApi = axios.create({
   baseURL: `${url}`,
